@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <title>MovieList-App</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <header>
+        <button class="js-btn_movie-list btn_movie-list">Movie List</button>
+        <button class="js-btn_year-movie btn_year-movie">2025</button>
+    </header>
+    <main class="main">
+        <h1>Посмотреть</h1>
+        <div class="container">
+            <section class="add_movies">
+
+                <input type="text" class="js-add_movies-name add_movies-name" placeholder="Введите название фильма">
+                <button class="js-btn_add-movies btn_add-movies">
+                    <img src="arrow.png">
+                </button>
+                <div class="movie_block">
+                    <div class="js-movie_list movie_list"></div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+</body>
+<script src="index.js"></script>
+
+</html>
