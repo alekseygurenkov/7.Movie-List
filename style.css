@@ -47,3 +47,98 @@ h1 {
 .btn_year-movie:hover {
     opacity: 70%;
 }
+
+.btn_add-movies {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+    border-radius: 50px;
+    background-color: #6532F8;
+    color: white;
+    border: none;
+}
+
+.btn_add-movies:hover {
+    opacity: 60%;
+}
+
+.add_movies-name {
+    width: 250px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    margin-bottom: 10px;
+}
+
+.add_movies {
+    width: 630px;
+    padding: 10px 100px;
+    margin: 80px;
+    background-color: rgb(53, 56, 56);
+    border-radius: 20px;
+}
+
+.movie_item {
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 2px solid green;
+}
+
+.icon_Movie {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 1px solid grey;
+    cursor: pointer;
+    color: blueviolet;
+}
+
+.icon_Movie.cross_out_type {
+    background-color: blueviolet;
+}
+
+.cross_out_movie {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.delete_movie {
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+}
+
+.delete_movie img {
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:750px) {
+
+    .container {
+        width: 100%;
+    }
+
+    header {
+        width: 100%;
+        display: flex;
+    }
+
+    .add_movies {
+        width: 400px;
+        padding: 10px 50px;
+    }
+
+    h1 {
+        font-size: 50px;
+        margin-left: 150px;
+    }
+
+
+}
