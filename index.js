@@ -19,6 +19,13 @@ btnInputNode.addEventListener('click', function () {
     render();
 })
 
+// Добавляем обработчик события нажатия клавиши на текстовое поле
+inputNode.addEventListener('keypress', function(e) {
+    if (e.keyCode === 13) { // Если нажата клавиша Enter
+      btnInputNode.click(); // Инициируем клик на кнопку
+    }
+  });
+
 function trackList(movie) {
     // Добавляем название фильма в массив
     listMovies.push(movie);
