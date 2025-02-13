@@ -2,7 +2,7 @@ body {
     font-family: "Arimo", sans-serif;
     /* background-color: rgba(14, 13, 13, 0.921); */
     background-color: #181818;
-    color: white;
+    color: #F3F6F9;
     box-sizing: border-box;
 }
 
@@ -60,7 +60,9 @@ h1 {
 }
 
 .btn_add-movies:hover {
-    opacity: 60%;
+    opacity: 50%;
+
+    
 }
 
 .add_movies-name {
@@ -71,6 +73,15 @@ h1 {
     border-bottom: 2px solid grey;
     background-color: transparent;
     margin-bottom: 10px;
+
+
+
+    /* font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -2%;
+    text-align: left;
+    color: red; */
 }
 
 .add_movies {
@@ -87,10 +98,18 @@ h1 {
     display: flex;
     justify-content: space-between;
     padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    margin-bottom: 3px;
+    border-radius: 10px;
     background-color: #3A3939;
     /* border: 2px solid green; */
+
+    color: rgb(243, 246, 249);
+    font-family: Arimo;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: -2%;
+    text-align: left;
 }
 
 .icon_Movie {
