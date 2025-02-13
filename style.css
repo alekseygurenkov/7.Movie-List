@@ -1,6 +1,7 @@
 body {
     font-family: "Arimo", sans-serif;
-    background-color: rgba(14, 13, 13, 0.921);
+    /* background-color: rgba(14, 13, 13, 0.921); */
+    background-color: #181818;
     color: white;
     box-sizing: border-box;
 }
@@ -76,7 +77,8 @@ h1 {
     width: 630px;
     padding: 10px 100px;
     margin: 80px;
-    background-color: rgb(53, 56, 56);
+    /* background-color: rgb(53, 56, 56); */
+    background-color: #232323;
     border-radius: 20px;
 }
 
@@ -87,7 +89,8 @@ h1 {
     padding: 10px;
     margin-bottom: 20px;
     border-radius: 5px;
-    border: 2px solid green;
+    background-color: #3A3939;
+    /* border: 2px solid green; */
 }
 
 .icon_Movie {
