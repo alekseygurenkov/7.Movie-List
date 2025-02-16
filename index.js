@@ -1,5 +1,5 @@
 // Получаем элементы по их CSS-селекторам
-const inputNode = document.querySelector('.js-add_movies-name');  // Элемент ввода для названия фильма
+const inputNode = document.querySelector('.js-add_movies-name');// Элемент ввода для названия фильма
 const btnInputNode = document.querySelector('.js-btn_add-movies');  // Кнопка для добавления фильма
 const listNode = document.querySelector('.js-movie_list');  // Список для отображения добавленных фильмов
 
@@ -53,8 +53,22 @@ function render() {
 
     listMovies.forEach((movie, index) => {
         // Создаем элемент списка для каждого фильма
+        // Создаем основной div элемент
         const movieItem = document.createElement('div');
         movieItem.className = 'movie_item';
+
+        // Создаем элемент для текста с отдельным классом
+        const movieText = document.createElement('span');
+        movieText.className = 'movie_text';
+        movieText.textContent = 'Текст фильма'; // Устанавливаем текст
+
+        // Добавляем текстовый элемент внутрь основного div
+        movieItem.appendChild(movieText);
+
+        // Добавляем основной div элемент на страницу
+        document.body.appendChild(movieItem);
+
+
 
         // Создаем иконку для элемента списка
         const iconMovie = document.createElement('div');

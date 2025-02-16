@@ -93,23 +93,24 @@ h1 {
     border-radius: 20px;
 }
 
+/* Список фильмов */
 .movie_item {
     max-width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 10px;
+    padding: 29px 24px 28px 20px;
     margin-bottom: 3px;
     border-radius: 10px;
     background-color: #3A3939;
     /* border: 2px solid green; */
 
-    color: rgb(243, 246, 249);
     font-family: Arimo;
     font-size: 20px;
     font-weight: 400;
     line-height: 23px;
     letter-spacing: -2%;
     text-align: left;
+    color: #F3F6F9;
 }
 
 .icon_Movie {
