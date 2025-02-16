@@ -52,17 +52,23 @@ function render() {
     listNode.innerHTML = '';
 
     listMovies.forEach((movie, index) => {
+        // Создаем элемент списка для каждого фильма
         // Создаем основной div элемент
         const movieItem = document.createElement('div');
         movieItem.className = 'movie_item';
 
-        // Создаем параграф для текста с классом movie_text
-        const movieText = document.createElement('p');
+        // Создаем элемент для текста с отдельным классом
+        const movieText = document.createElement('span');
         movieText.className = 'movie_text';
-        movieText.textContent = movie; // Устанавливаем текст
+        movieText.textContent = 'Текст фильма'; // Устанавливаем текст
 
-        // Добавляем параграф внутрь основного div
+        // Добавляем текстовый элемент внутрь основного div
         movieItem.appendChild(movieText);
+
+        // Добавляем основной div элемент на страницу
+        document.body.appendChild(movieItem);
+
+
 
         // Создаем иконку для элемента списка
         const iconMovie = document.createElement('div');
@@ -71,7 +77,11 @@ function render() {
         // Добавляем обработчик клика на иконку
         iconMovie.addEventListener('click', () => {
             crossOutMovie(movieItem, iconMovie);
-        });
+        })
+
+        // Создаем название фильма
+        const movieName = document.createElement('div');
+        movieName.textContent = movie;
 
         // Создаем кнопку для удаления элемента
         const deleteButton = document.createElement('div');
@@ -84,18 +94,19 @@ function render() {
         // Добавляем обработчик клика на кнопку удаления
         deleteButton.addEventListener('click', () => {
             deleteMovie(index);
-        });
+        })
 
         // Добавляем иконку удаления к кнопке
         deleteButton.appendChild(deleteIcon);
 
-        // Добавляем иконку и кнопку к элементу списка
+        // Добавляем иконку к элементу списка
         movieItem.appendChild(iconMovie);
+        movieItem.appendChild(movieName);
         movieItem.appendChild(deleteButton);
 
         // Добавляем элемент списка в общий список
         listNode.appendChild(movieItem);
-    });
+    })
 }
 
 function crossOutMovie(movieItem, iconMovie) {
