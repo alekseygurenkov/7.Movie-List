@@ -4,10 +4,14 @@ body {
     background-color: #181818;
     color: #F3F6F9;
     box-sizing: border-box;
+
+    width: 1440px;
+    margin: 0 auto;
 }
 
 .container {
-    width: 900px;
+    width: 930px;
+    margin: 0 auto;
 }
 
 header {
@@ -65,14 +69,19 @@ h1 {
     
 }
 
+.box-add_movies-name {
+    margin: 0 auto;
+}
+
 .add_movies-name {
-    width: 250px;
+    width: 411px;
     height: 30px;
     border: none;
     color: white;
     border-bottom: 2px solid grey;
     background-color: transparent;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    
 
 
 
@@ -85,9 +94,9 @@ h1 {
 }
 
 .add_movies {
-    width: 630px;
-    padding: 10px 100px;
-    margin: 80px;
+    width: 100%;
+    padding-top: 60px;
+    /* margin: 80px; */
     /* background-color: rgb(53, 56, 56); */
     background-color: #232323;
     border-radius: 20px;
@@ -95,7 +104,9 @@ h1 {
 
 /* Список фильмов */
 .movie_item {
-    max-width: 100%;
+    /* max-width: 100%; */
+    width: 790px;
+    margin: 0   auto;
     display: flex;
     justify-content: space-between;
     padding: 29px 24px 28px 20px;
