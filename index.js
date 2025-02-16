@@ -56,22 +56,19 @@ function render() {
         const movieItem = document.createElement('div');
         movieItem.className = 'movie_item';
 
-        // Создаем параграф для текста с классом movie_text
-        const movieText = document.createElement('p');
-        movieText.className = 'movie_text';
-        movieText.textContent = movie; // Устанавливаем текст
-
-        // Добавляем параграф внутрь основного div
-        movieItem.appendChild(movieText);
-
         // Создаем иконку для элемента списка
         const iconMovie = document.createElement('div');
         iconMovie.className = 'icon_Movie';
 
         // Добавляем обработчик клика на иконку
         iconMovie.addEventListener('click', () => {
-            crossOutMovie(movieItem, iconMovie);
+            crossOutMovie(movieItem, iconMovie, movieText);
         });
+
+        // Создаем параграф для текста с классом movie_text
+        const movieText = document.createElement('p');
+        movieText.className = 'movie_text';
+        movieText.textContent = movie; // Устанавливаем текст
 
         // Создаем кнопку для удаления элемента
         const deleteButton = document.createElement('div');
@@ -89,8 +86,9 @@ function render() {
         // Добавляем иконку удаления к кнопке
         deleteButton.appendChild(deleteIcon);
 
-        // Добавляем иконку и кнопку к элементу списка
+        // Добавляем элементы в правильном порядке внутрь основного div
         movieItem.appendChild(iconMovie);
+        movieItem.appendChild(movieText);
         movieItem.appendChild(deleteButton);
 
         // Добавляем элемент списка в общий список
@@ -98,9 +96,11 @@ function render() {
     });
 }
 
-function crossOutMovie(movieItem, iconMovie) {
+function crossOutMovie(movieItem, iconMovie, movieText) {
     // Переключаем класс для отображения зачеркнутого элемента
     movieItem.classList.toggle('cross_out_movie');
+    // Переключаем класс для отображения зачеркнутого элемента
+    movieText.classList.toggle('cross_out_movie');
     // Переключаем класс для иконки
     iconMovie.classList.toggle('cross_out_type');
 }
