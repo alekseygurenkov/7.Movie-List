@@ -11,42 +11,7 @@ body {
 header {
     /* display: flex; */
     width: 930px;
-    height: 200px;
     margin: 0 auto;
-}
-
-.main {
-    width: 930px;
-    height: 100px;
-    margin: 0 auto;
-}
-
-.container {
-    width: 930px;
-    height: 800px;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 120px;
-    font-weight: 400;
-    line-height: 138px;
-    letter-spacing: -4%;
-    text-align: left;
-    margin-top: 20px;
-    margin-left: 74px;
-    margin-bottom: 45px;
-}
-
-/* main {
-    max-width: 1180px;
-    padding: 15px 0;
-    margin: 0 auto;
-}
-
-h1 {
-    font-size: 70px;
-    margin-left: 200px;
 }
 
 .btn_movie-list,
@@ -70,6 +35,39 @@ h1 {
 .btn_year-movie:hover {
     opacity: 70%;
 }
+
+.main {
+    width: 930px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 120px;
+    font-weight: 400;
+    line-height: 138px;
+    letter-spacing: -4%;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 74px;
+    margin-bottom: 45px;
+}
+
+.container {
+    width: 930px;
+    height: 800px;
+    margin: 0 auto;
+}
+
+.add_movies {
+    /* width: 100%; */
+    width: 930px;
+    height: 700px;
+    padding-top: 60px;
+    background-color: #232323;
+    border-radius: 20px;
+}
+
+/* 
 
 .btn_add-movies {
     width: 40px;
@@ -111,12 +109,7 @@ h1 {
     color: red; 
 }*/
 
-/* .add_movies {
-    width: 100%;
-    padding-top: 60px;
-    background-color: #232323;
-    border-radius: 20px;
-} */
+
 
 /* Список фильмов */
 .movie_item {
