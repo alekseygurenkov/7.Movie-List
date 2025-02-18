@@ -13,10 +13,12 @@ header {
     margin: 0 auto;
 }
 
+/* Кнопки вверху сайта "Список Фильмов" "2025" */
 .btn_movie-list,
 .btn_year-movie {
-    /* margin-left: 200px; */
-    margin-top: 30px;
+    margin-left: 74px;
+    margin-top: 80px;
+    margin-bottom: 20px;
     width: 183px;
     height: 30px;
     background-color: #6532F8;
@@ -46,8 +48,7 @@ h1 {
     line-height: 138px;
     letter-spacing: -4%;
     text-align: left;
-    margin-top: 20px;
-    /* margin-left: 74px; */
+    margin-left: 74px;
     margin-bottom: 45px;
 }
 
@@ -67,12 +68,34 @@ h1 {
     margin: 0 auto;
 }
 
-/* 
+.box-add_movies-name {
+    margin: 0 auto;
+} 
+
+ .add_movies-name {
+    width: 411px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+    /* margin-bottom: 10px; */
+    
+
+
+
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 34px;
+    letter-spacing: -2%;
+    text-align: left;
+    color: red; 
+}
 
 .btn_add-movies {
-    width: 40px;
-    height: 40px;
-    padding: 5px;
+    width: 62px;
+    height: 62px;
+    padding: 15px;
     border-radius: 50px;
     background-color: #6532F8;
     color: white;
@@ -81,35 +104,7 @@ h1 {
 
 .btn_add-movies:hover {
     opacity: 50%;
-
-    
 }
-
-.box-add_movies-name {
-    margin: 0 auto;
-} */
-
-/* .add_movies-name {
-    width: 411px;
-    height: 30px;
-    border: none;
-    color: white;
-    border-bottom: 2px solid grey;
-    background-color: transparent; */
-    /* margin-bottom: 10px; */
-    
-
-
-
-    /* font-size: 30px;
-    font-weight: 400;
-    line-height: 34px;
-    letter-spacing: -2%;
-    text-align: left;
-    color: red; 
-}*/
-
-
 
 /* Список фильмов */
 .movie_item {
