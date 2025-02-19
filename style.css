@@ -108,15 +108,15 @@ h1 {
 }
 
 /* Список фильмов */
+/* Должен меняться цвет фона блока при нажатии на кружочек и текст нужно сделать левее */
 .movie_item {
     width: 790px;
-    display: flex;
-    justify-content: space-between;
+    display: flex; /* Что-то тут нужно допилить для расположения круг-текст-х */
+    justify-content: space-between; /* Что-то тут нужно допилить для расположения круг-текст-х */
     padding: 29px 24px 28px 20px;
     margin-bottom: 3px;
     border-radius: 10px;
     background-color: #3A3939;
-    /* border: 2px solid green; */
 }
 
 .movie_text {
@@ -146,6 +146,10 @@ h1 {
 .cross_out_movie {
     text-decoration: line-through;
     color: grey;
+}
+
+.movie_item.cross_out_type {
+    background-color: #3A3939;
 }
 
 .delete_movie {
