@@ -119,6 +119,10 @@ h1 {
     background-color: #3A3939;
 }
 
+.movie_item.active {
+    background-color: blue; /* новый цвет фона при активации */
+  }
+
 .movie_text {
     font-size: 20px;
     font-weight: 400;

@@ -105,6 +105,11 @@ function crossOutMovie(movieItem, iconMovie, movieText) {
     iconMovie.classList.toggle('cross_out_type');
 }
 
+iconMovie.addEventListener('click', () => {
+    movieItem.classList.toggle('active'); // Переключаем класс для изменения цвета фона
+    crossOutMovie(movieItem, iconMovie, movieText);
+});
+
 function deleteMovie(index) {
     // Удаляем элемент из массива фильмов
     listMovies.splice(index, 1);
