@@ -59,15 +59,10 @@ function render() {
         // Создаем иконку для элемента списка
         const iconMovie = document.createElement('div');
         iconMovie.className = 'icon_Movie';
-        
-        // Добавляем обработчик клика на иконку
-        iconMovie.addEventListener('click', () => {
-            movieItem.classList.toggle('active'); // Переключаем класс для изменения цвета фона
-            crossOutMovie(movieItem, iconMovie, movieText);
-        });
 
         // Добавляем обработчик клика на иконку
         iconMovie.addEventListener('click', () => {
+            movieItem.classList.toggle('active'); // Переключаем класс для изменения цвета фона
             crossOutMovie(movieItem, iconMovie, movieText);
         });
 
