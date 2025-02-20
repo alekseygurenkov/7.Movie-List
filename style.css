@@ -112,7 +112,8 @@ h1 {
 .movie_item {
     width: 790px;
     display: flex; /* Что-то тут нужно допилить для расположения круг-текст-х */
-    justify-content: space-between; /* Что-то тут нужно допилить для расположения круг-текст-х */
+    /* justify-content: space-between;  */
+    /* Что-то тут нужно допилить для расположения круг-текст-х */
     padding: 29px 24px 28px 20px;
     margin-bottom: 3px;
     border-radius: 10px;
@@ -143,6 +144,11 @@ h1 {
     color: blueviolet;
 }
 
+.icon_Movie,
+.movie_text {
+    margin-right: 20px; /* Расстояние между элементами */
+}
+
 .icon_Movie.cross_out_type {
     background-color: blueviolet;
 }
@@ -160,6 +166,7 @@ h1 {
     cursor: pointer;
     width: 23px;
     height: 23px;
+    margin-left: auto; /* Отталкивает элемент к правому краю контейнера */
 }
 
 .delete_movie img {
