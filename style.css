@@ -120,7 +120,7 @@ h1 {
 }
 
 .movie_item.active {
-    background-color: blue; /* новый цвет фона при активации */
+    opacity: 30%;/* новый цвет фона при активации */
   }
 
 .movie_text {
