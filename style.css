@@ -60,9 +60,7 @@ h1 {
 }
 
 .add_movies {
-    /* width: 100%; */
     width: 930px;
-    /* height: 700px; */
     padding-top: 60px;
     background-color: #232323;
     border-radius: 20px;
@@ -111,9 +109,7 @@ h1 {
 /* Должен меняться цвет фона блока при нажатии на кружочек и текст нужно сделать левее */
 .movie_item {
     width: 790px;
-    display: flex; /* Что-то тут нужно допилить для расположения круг-текст-х */
-    /* justify-content: space-between;  */
-    /* Что-то тут нужно допилить для расположения круг-текст-х */
+    display: flex; /* Чтобы выстроить элементы в строку */
     padding: 29px 24px 28px 20px;
     margin-bottom: 3px;
     border-radius: 10px;
@@ -130,7 +126,6 @@ h1 {
     line-height: 23px;
     letter-spacing: -2%;
     display: block;
-    /* text-align: left; */
     float: left;
     color: #F3F6F9;
 }
@@ -173,42 +168,3 @@ h1 {
     width: 100%;
     height: 100%;
 }
-
-/* Список фильмов */
-/*.movie_item {
-    max-width: 100%;
-    width: 790px;
-    margin: 0   auto;
-    display: flex;
-    justify-content: space-between;
-    padding: 29px 24px 28px 20px;
-    margin-bottom: 3px;
-    border-radius: 10px;
-    background-color: #3A3939;
-    border: 2px solid green;
-}*/
-
-/* 
-@media (max-width:750px) {
-
-    .container {
-        width: 100%;
-    }
-
-    header {
-        width: 100%;
-        display: flex;
-    }
-
-    .add_movies {
-        width: 400px;
-        padding: 10px 50px;
-    }
-
-    h1 {
-        font-size: 50px;
-        margin-left: 150px;
-    }
-
-
-} */
